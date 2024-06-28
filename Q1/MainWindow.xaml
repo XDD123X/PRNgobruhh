@@ -1,0 +1,90 @@
+﻿<Window x:Class="Q1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Q1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="806" Width="872">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Background="LightBlue"  Orientation ="Vertical" 
+                HorizontalAlignment="Left" Width="562" Margin="0,0,0,86" RenderTransformOrigin="0.426,0.564" Grid.RowSpan="2">
+
+            <Label Name="lblInstruction" Foreground="Red" FontWeight="DemiBold" 
+               FontSize="20" Content="Student Information"/>
+
+            <Label Name="lblStudentID" Content="Student Id"/>
+            <TextBox Name="txtStudentID" HorizontalAlignment="Left" 
+                 IsReadOnly="True" Height="25" Width="479"
+                 Text="{Binding Path=StudentId, Mode=OneWay}"  
+                 DataContext="{Binding ElementName=lvStudent, Path=SelectedItem}"/>
+            <Label Name="lbStudentFullName" Content="FullName" />
+            <TextBox Name="txtStudentFullName" HorizontalAlignment="Left"
+                 Height="25" Width="483" Text="{Binding Path=StudentName, Mode=OneWay}"
+                 DataContext="{Binding ElementName=lvStudent, Path=SelectedItem}" />
+            <Label Name="lbLEcture" Content="Lecture" />
+            <ComboBox Name="cbLecturer"
+            DisplayMemberPath="FullName"
+            SelectedValuePath="Id"
+            SelectedValue="{Binding Path=Lecture.Id, Mode=OneWay}" 
+            DataContext="{Binding ElementName=lvStudent, Path=SelectedItem}" />
+
+            <Label Name="lblGender" Content="Gender"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <RadioButton Name="rbMale" Content="Male" 
+                             IsChecked="{Binding Path=Male, Mode=OneWay}"
+                             DataContext="{Binding ElementName=lvStudent, Path=SelectedItem}"/>
+                <RadioButton Name="rbFemale" Content="Female" 
+                             IsChecked="{Binding Path=Female, Mode=OneWay}"
+                             DataContext="{Binding ElementName=lvStudent, Path=SelectedItem}"/>
+            </StackPanel>
+
+            <Label Name="lblDateOfBirth" Content="Date of Birth"/>
+            <DatePicker Name="dpDateOfBirth" SelectedDate="{Binding Path=DateOfBirth, Mode=OneWay}" 
+                        SelectedDateFormat="Short" Language="en-GB"
+                        DataContext="{Binding ElementName=lvStudent, Path=SelectedItem}"/>
+
+            <Label Name="lblNote" Content="Note"/>
+            <TextBox Name="txtNote" HorizontalAlignment="Left"
+                     Height="25" Width="483" Text="{Binding Path=Note, Mode=OneWay}"
+                     DataContext="{Binding ElementName=lvStudent, Path=SelectedItem}" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0">
+                <Button Name="btnAdd" Content="Add" Width="75" Margin="5,0,5,0" Click="btnAdd_Click"/>
+                <Button Name="btnRefresh" Content="Refresh" Width="75" Margin="5,0,5,0"/>
+                <Button Name="btnEdit" Content="Edit" Width="75" Margin="5,0,5,0" Click="btnEdit_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <ListView Grid.Row="1" Name="lvStudent" Margin="0,87,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Student Id" Width="100" 
+                                DisplayMemberBinding="{Binding Path=StudentId}"/>
+                    <GridViewColumn Header="Student Name" Width="150"
+                                DisplayMemberBinding="{Binding Path=StudentName}"/>
+                    <GridViewColumn Header="Gender" Width="100"
+                                DisplayMemberBinding="{Binding Path=Gender}"/>
+                    <GridViewColumn Header="Lecture" Width="150"
+                                DisplayMemberBinding="{Binding Path=Lecture.FullName }"/>
+                    <GridViewColumn Header="Date Of Brith">
+                        <GridViewColumn.DisplayMemberBinding>
+                            <Binding Path="DateOfBirth" StringFormat="{}{0:dd/MM/yyyy}"></Binding>
+                        </GridViewColumn.DisplayMemberBinding>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Note" Width="200"
+                                DisplayMemberBinding="{Binding Path=Note}"/>
+                    <GridViewColumn Header="Phone" Width="200"
+                                DisplayMemberBinding="{Binding Path=Phone}"/>
+                    <GridViewColumn Header="ID Number" Width="200"
+                                DisplayMemberBinding="{Binding Path=IDNumber}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

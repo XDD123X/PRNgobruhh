@@ -1,0 +1,83 @@
+﻿@page
+@model Q2.Pages.Students.ListModel
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1>Student Manage</h1>
+<form>
+	<label>Name</label>
+	<input type="text" asp-for="SearchString" />
+	<button type="submit">Search</button>
+</form>
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				ID
+			</th>
+			<th>
+				FullName
+			</th>
+			<th>
+				LectureName
+			</th>
+			<th>
+				Dob
+			</th>
+			<th>
+				Gender
+			</th>
+			<th>
+				Class
+			</th>
+			<th>
+				Subject
+			</th>
+			<th>
+
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.students)
+		{
+			<tr>
+				<td>
+					@item.Id
+				</td>
+				<td>
+					@item.FullName
+				</td>
+				<td>
+					@item.Lecture.FullName
+				</td>
+				<td>
+					@item.Dob
+				</td>
+				<td>
+					@if (item.Male)
+					{
+						<span>>Male</span>
+					}
+					else
+					{
+						<span>Female</span>
+					}
+				</td>
+				<td>
+					@item.Classes
+				</td>
+				<td>
+					@item.StudentSubjects
+				</td>
+				<td>
+					<a>Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
