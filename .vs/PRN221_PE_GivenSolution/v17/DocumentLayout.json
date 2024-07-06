@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F50CC8E9-C554-4A7E-B151-AA466AC31DDE}|Q2\\Q2.csproj|C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\q2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F50CC8E9-C554-4A7E-B151-AA466AC31DDE}|Q2\\Q2.csproj|solutionrelative:q2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E509B39F-B2BA-4E09-8F9A-95CCA091234D}|Q1\\Q1.csproj|c:\\users\\quanh\\source\\pe\\prn221_pe_he171875\\q1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E509B39F-B2BA-4E09-8F9A-95CCA091234D}|Q1\\Q1.csproj|solutionrelative:q1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -15,12 +19,8 @@
       "RelativeMoniker": "D:0:0:{F50CC8E9-C554-4A7E-B151-AA466AC31DDE}|Q2\\Q2.csproj|solutionrelative:q2\\models\\studentsubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E509B39F-B2BA-4E09-8F9A-95CCA091234D}|Q1\\Q1.csproj|c:\\users\\quanh\\source\\pe\\prn221_pe_he171875\\q1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E509B39F-B2BA-4E09-8F9A-95CCA091234D}|Q1\\Q1.csproj|C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\q1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E509B39F-B2BA-4E09-8F9A-95CCA091234D}|Q1\\Q1.csproj|solutionrelative:q1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F50CC8E9-C554-4A7E-B151-AA466AC31DDE}|Q2\\Q2.csproj|C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\q2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F50CC8E9-C554-4A7E-B151-AA466AC31DDE}|Q2\\Q2.csproj|solutionrelative:q2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F50CC8E9-C554-4A7E-B151-AA466AC31DDE}|Q2\\Q2.csproj|C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\q2\\pages\\student\\list.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 68,
+          "SelectedChildIndex": 69,
           "Children": [
             {
               "$type": "Bookmark",
@@ -306,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Q1\\MainWindow.xaml.cs",
@@ -314,37 +314,36 @@
               "RelativeToolTip": "Q1\\MainWindow.xaml.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAA3wF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T09:12:21.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T09:12:21.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Q1\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q1\\MainWindow.xaml",
-              "RelativeToolTip": "Q1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q1\\MainWindow.xaml*",
+              "RelativeToolTip": "Q1\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-25T07:51:21.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q2\\Program.cs",
               "RelativeDocumentMoniker": "Q2\\Program.cs",
               "ToolTip": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q2\\Program.cs",
               "RelativeToolTip": "Q2\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T07:32:40.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StudentSubject.cs",
               "DocumentMoniker": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q2\\Models\\StudentSubject.cs",
               "RelativeDocumentMoniker": "Q2\\Models\\StudentSubject.cs",
@@ -352,12 +351,11 @@
               "RelativeToolTip": "Q2\\Models\\StudentSubject.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T07:29:58.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T07:29:58.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "List.cshtml",
               "DocumentMoniker": "C:\\Users\\quanh\\source\\PE\\PRN221_PE_HE171875\\Q2\\Pages\\Student\\List.cshtml",
               "RelativeDocumentMoniker": "Q2\\Pages\\Student\\List.cshtml",
@@ -365,8 +363,7 @@
               "RelativeToolTip": "Q2\\Pages\\Student\\List.cshtml",
               "ViewState": "AQIAADcAAAAAAAAAAAAuwEcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-25T07:23:18.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T07:23:18.749Z"
             },
             {
               "$type": "Document",
